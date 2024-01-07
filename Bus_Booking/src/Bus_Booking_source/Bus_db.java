@@ -1,7 +1,7 @@
 package Bus_Booking_source;
 
 public class Bus_db {
-	int Bus_number;
+	int Bus_number;//unique
 	boolean Sleeper,Sheeter,AC;
 	String path[];
 	int price[];
@@ -20,11 +20,15 @@ public class Bus_db {
 			{
 				if(Price[i]!=0)
 				{
-					Price[i]+=50;
+					Price[i]+=50;//50 for Ac
 				}
 			}
 		}
 		this.price=Price;
+	}
+	public int[] get_price()
+	{
+		return this.price;
 	}
 	
 	public void Get_details_of_bus()
