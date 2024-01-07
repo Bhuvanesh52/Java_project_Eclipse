@@ -123,7 +123,7 @@ public class Bus_Booking_main {
 					System.out.println("your booking is Done Happy journy....");
 					
 					
-				}else if(User_opt==2)//Search
+				}else if(User_opt==2)//Search here
 				{
 					int Search_By=0;
 					while(Search_By!=3)
