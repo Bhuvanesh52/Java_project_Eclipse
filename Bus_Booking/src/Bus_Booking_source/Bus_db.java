@@ -26,4 +26,18 @@ public class Bus_db {
 		}
 		this.price=Price;
 	}
+	
+	public void Get_details_of_bus()
+	{
+		System.out.print(this.Bus_number+"\t"+this.capacity+"\t\t"+this.Sleeper+"\t"+this.Sheeter+"\t"+this.AC+"\t");
+		if(this.Sleeper && this.Sheeter)
+		{
+			System.out.print(this.price[0]+"\t\t"+this.price[1]+"\t\t");
+		}else {
+		System.out.print(this.Sleeper?this.price[0]+"\t\t":0 +"\t\t");
+		System.out.print(this.Sheeter?this.price[0]+"\t\t":0 +"\t\t");
+		}
+		System.out.println(this.path[0]+" - "+this.path[1]);
+	}
+	
 }
