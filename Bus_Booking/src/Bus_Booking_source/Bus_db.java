@@ -1,11 +1,11 @@
 package Bus_Booking_source;
 
 public class Bus_db {
-	int Bus_number;//unique
-	boolean Sleeper,Sheeter,AC;
-	String path[];
-	int price[];
-	int capacity;
+	private int Bus_number;//unique
+	private boolean Sleeper,Sheeter,AC;
+	private String path[];
+	private int price[];
+	private int capacity;
 	Bus_db(int Bus_Number,int Capacity,boolean Sleeper,boolean Sheeter,boolean Ac,int Price[],String path[])
 	{
 		this.Bus_number=Bus_Number;
@@ -26,6 +26,34 @@ public class Bus_db {
 		}
 		this.price=Price;
 	}
+	public void set_Bus_number()
+	{
+		this.capacity--;
+	}
+	public String[] get_path()
+	{
+		return this.path;
+	}
+	public int get_capacity()
+	{
+		return this.capacity;
+	}
+	
+	public boolean get_Sleeper()
+	{
+		return this.Sleeper;
+	}
+	
+	public boolean get_Sheeter()
+	{
+		return this.Sheeter;
+	}
+	
+	public int get_Bus_number()
+	{
+		return this.Bus_number;
+	}
+	
 	public int[] get_price()
 	{
 		return this.price;
@@ -43,5 +71,6 @@ public class Bus_db {
 		}
 		System.out.println(this.path[0]+" - "+this.path[1]);
 	}
+
 	
 }
